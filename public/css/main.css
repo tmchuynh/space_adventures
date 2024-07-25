@@ -1,0 +1,71 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      background-color: black;
+      color: white;
+}
+.game-container {
+      border: 2px solid white;
+      position: relative;
+      display: flex;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      flex-direction: column;
+}
+
+.game-details {
+      display: flex;
+      justify-content: space-around;
+      text-transform: uppercase;
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+      padding-top: 5px;
+}
+
+#start-button {
+      height: fit-content;
+      width: fit-content;
+      margin: auto;
+      border-radius: 25px;
+      background-color: white;
+      padding: 5px 10px;
+}
+
+#start-button:hover {
+      background-color: lightgrey;
+      cursor: pointer;
+}
+
+.player {
+      position: absolute;
+      bottom: 20px;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 40px;
+      background-color: blue;
+      border-radius: 50%;
+}
+
+.laser {
+      display: none;
+      position: absolute;
+      background-color: yellow;
+      width: 5px;
+      height: 10px;
+      top: 0;
+      left: 0;
+}
+
+.enemy {
+      position: absolute;
+      top: -40px;
+      width: 40px;
+      height: 40px;
+      background-color: crimson;
+      border-radius: 50%;
+      transition: top 2s linear;
+}
