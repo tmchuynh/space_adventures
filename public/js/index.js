@@ -65,7 +65,6 @@ function fireLaser() {
       }, 50);
 }
 
-// Uncomment this if you want to use arrow keys for player movement
 document.addEventListener("keydown", movePlayer);
 
 // Spacebar triggers laser firing
