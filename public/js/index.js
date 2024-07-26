@@ -24,6 +24,8 @@ function movePlayer(event) {
       }
 }
 
+document.addEventListener("keydown", movePlayer);
+
 function movePlayerLeft() {
       const currentPosition = parseInt(
             window.getComputedStyle(player).getPropertyValue("left")
@@ -64,8 +66,6 @@ function fireLaser() {
             }
       }, 50);
 }
-
-document.addEventListener("keydown", movePlayer);
 
 // Spacebar triggers laser firing
 document.addEventListener("keydown", function (event) {
